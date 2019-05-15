@@ -93,3 +93,47 @@ function/WAVE ImageSetStats(imgArr)
 	return pixelMean
 
 end
+
+function SetBrightness(val)
+	// range: 1.367 to 
+	variable val
+	variable ret = PGR_SetSetting(0,0,1,val,0,1)
+	return ret
+end
+
+function SetExposure(val)
+	variable val
+	variable ret = PGR_SetSetting(0,1,1,val,0,1)
+	return ret
+end
+
+function SetSharpness(val)
+	variable val
+	variable ret = PGR_SetSetting(0,2,1,val,0,1)
+	return ret
+end
+
+function SetGamma(val)
+	variable val
+	variable ret = PGR_SetSetting(0,3,1,val,0,1)
+	return ret
+end
+
+
+function SetShutter(val)
+	variable val
+	variable ret = PGR_SetSetting(0,4,1,val,0,1)
+	return ret
+end
+
+function SetGain(val)
+	variable val
+	variable ret = PGR_SetSetting(0,5,1,val,0,1)
+	return ret
+end
+
+function SetFrameRate(val)
+	variable val
+	variable ret = PGR_SetSetting(0,6,1,val,0,1)
+	return ret
+end
